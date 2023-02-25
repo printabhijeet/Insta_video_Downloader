@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const instagramGetUrl = require("instagram-url-direct")
-
+app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 
